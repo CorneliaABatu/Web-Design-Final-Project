@@ -8,25 +8,85 @@
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
 <link href="../css/styles.css" rel="stylesheet" type="text/css" />
+<!-- TemplateParam name="navigation-home" type="boolean" value="false" -->
+<!-- TemplateParam name="navigation-about" type="boolean" value="true" -->
+<!-- TemplateParam name="navigation-contact" type="boolean" value="false" -->
+<!-- TemplateParam name="navigation-drink" type="boolean" value="false" -->
+<!-- TemplateParam name="navigation-food" type="boolean" value="true" -->
+<!-- TemplateParam name="navigation-gallery" type="boolean" value="false" -->
 </head>
 
 <body>
-	<div class="wrapper">
-	<div class="navigation"><!-- TemplateBeginEditable name="Navigation" --><!-- TemplateEndEditable -->
-    <table>
-  <tr>
-    <td>Home</td>
-    <td>About Us</td>
-    <td>Contact Us</td>
-    <td>Drink Menu</td>
-    <td>Food Menu</td>
-    <td>Gallery</td>
-  </tr>
-</table>
-
-    </div>
-    <div class="content"><!-- TemplateBeginEditable name="Content" --><!-- TemplateEndEditable -->
-    </div>
-    </div>
+<div class="wrapper">
+  <div class="navigation"><img src="../images/logo.jpg" width="190" height="186" alt="logo" /><!-- TemplateBeginIf cond="_document['navigation-home']" -->
+    <table align="center">
+      <tr>
+        <td bgcolor="#990000" class="thispage"><a href="../index.html">Home</a></td>
+        <td bgcolor="#990000"><a href="../about-us.html">About Us</a></td>
+        <td bgcolor="#990000"><a href="../contact-us.html">Contact Us</a></td>
+        <td bgcolor="#990000"><a href="../drink-menu.html">Drink Menu</a></td>
+        <td bgcolor="#990000"><a href="../food-menu.html">Food Menu</a></td>
+        <td bgcolor="#990000"><a href="../gallery.html">Gallery</a></td>
+      </tr>
+    </table>
+  <!-- TemplateEndIf --><!-- TemplateBeginIf cond="_document['navigation-about']" -->
+  <table align="center">
+    <tr>
+      <td bgcolor="#990000"><a href="../index.html">Home</a></td>
+      <td bgcolor="#990000" class="thispage"><a href="../about-us.html">About Us</a></td>
+      <td bgcolor="#990000"><a href="../contact-us.html">Contact Us</a></td>
+      <td bgcolor="#990000"><a href="../drink-menu.html">Drink Menu</a></td>
+      <td bgcolor="#990000"><a href="../food-menu.html">Food Menu</a></td>
+      <td bgcolor="#990000"><a href="../gallery.html">Gallery</a></td>
+    </tr>
+  </table>
+  <!-- TemplateEndIf --><!-- TemplateBeginIf cond="_document['navigation-contact']" -->
+  <table align="center">
+    <tr>
+      <td bgcolor="#990000"><a href="../index.html">Home</a></td>
+      <td bgcolor="#990000"><a href="../about-us.html">About Us</a></td>
+      <td bgcolor="#990000" class="thispage"><a href="../contact-us.html">Contact Us</a></td>
+      <td bgcolor="#990000"><a href="../drink-menu.html">Drink Menu</a></td>
+      <td bgcolor="#990000"><a href="../food-menu.html">Food Menu</a></td>
+      <td bgcolor="#990000"><a href="../gallery.html">Gallery</a></td>
+    </tr>
+  </table>
+  <!-- TemplateEndIf --><!-- TemplateBeginIf cond="_document['navigation-drink']" -->
+  <table align="center">
+    <tr>
+      <td bgcolor="#990000"><a href="../index.html">Home</a></td>
+      <td bgcolor="#990000"><a href="../about-us.html">About Us</a></td>
+      <td bgcolor="#990000"><a href="../contact-us.html">Contact Us</a></td>
+      <td bgcolor="#990000" class="thispage"><a href="../drink-menu.html">Drink Menu</a></td>
+      <td bgcolor="#990000"><a href="../food-menu.html">Food Menu</a></td>
+      <td bgcolor="#990000"><a href="../gallery.html">Gallery</a></td>
+    </tr>
+  </table>
+  <!-- TemplateEndIf --><!-- TemplateBeginIf cond="_document['navigation-food']" -->
+  <table align="center">
+    <tr>
+      <td bgcolor="#990000"><a href="../index.html">Home</a></td>
+      <td bgcolor="#990000"><a href="../about-us.html">About Us</a></td>
+      <td bgcolor="#990000"><a href="../contact-us.html">Contact Us</a></td>
+      <td bgcolor="#990000"><a href="../drink-menu.html">Drink Menu</a></td>
+      <td bgcolor="#990000" class="thispage"><a href="../food-menu.html">Food Menu</a></td>
+      <td bgcolor="#990000"><a href="../gallery.html">Gallery</a></td>
+    </tr>
+  </table>
+  <!-- TemplateEndIf --><!-- TemplateBeginIf cond="_document['navigation-gallery']" -->
+  <table align="center">
+    <tr>
+      <td bgcolor="#990000"><a href="../index.html">Home</a></td>
+      <td bgcolor="#990000"><a href="../about-us.html">About Us</a></td>
+      <td bgcolor="#990000"><a href="../contact-us.html">Contact Us</a></td>
+      <td bgcolor="#990000"><a href="../drink-menu.html">Drink Menu</a></td>
+      <td bgcolor="#990000"><a href="../food-menu.html">Food Menu</a></td>
+      <td bgcolor="#990000" class="thispage"><a href="../gallery.html">Gallery</a></td>
+    </tr>
+  </table>
+  <!-- TemplateEndIf -->
+  <div class="content"><!-- TemplateBeginEditable name="Content" --><!-- TemplateEndEditable --></div>
+  </div>
+  </div>
 </body>
 </html>
